@@ -1,0 +1,10 @@
+<p>property-binding works!</p>
+
+<!--string interpolation-->
+<p>{{buttonDisabled}}</p>
+
+<!--property binding play with the DOM-->
+<!--set button disable attribute to be false after 1 second-->
+<button class="btn btn-danger" [disabled]="buttonDisabled" (click)="buttonClick()">Click me</button>
+<p [innerText]="buttonDisabled"></p>
+
