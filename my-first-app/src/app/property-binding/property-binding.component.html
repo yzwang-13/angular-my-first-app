@@ -5,6 +5,9 @@
 
 <!--property binding play with the DOM-->
 <!--set button disable attribute to be false after 1 second-->
-<button class="btn btn-danger" [disabled]="buttonDisabled" (click)="buttonClick()">Click me</button>
+<button class="btn btn-danger" [disabled]="buttonDisabled">Click me</button>
 <p [innerText]="buttonDisabled"></p>
+
+<!-- binding events to methods-->
+<button class="btn btn-primary" (click)="buttonClick()">Event binding</button>
 
