@@ -15,3 +15,12 @@
 <input type="text" class="form-control" (input)="textEntered($event)">
 <p>server name : {{serverName}}</p>
 
+<!--two way data binding-->
+<input type="text" class="form-control" (input)="textEntered($event)">
+<input type="text" class="form-control" [(ngModel)]="serverName">
+
+<!--Combine of all forms of databinding-->
+<button class="btn btn-block" (click)="createServer()">Create server</button>
+<p>{{createdServerName}}</p>
+
+

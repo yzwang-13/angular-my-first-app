@@ -8,20 +8,28 @@ import {timeout} from "rxjs/operators";
 })
 export class PropertyBindingComponent implements OnInit {
   buttonDisabled = true;
-  serverName = "";
+  serverName = "My server name John";
+  createdServerName = "";
   constructor() {
    setTimeout(()=>{
      this.buttonDisabled = false;
    },1000)
   }
 
+  // event binding
   buttonClick(){
     this.buttonDisabled = true;
   }
 
+  // event binding with parameters
   textEntered(event: any){
     console.log((<HTMLInputElement>event.target).value);
     this.serverName = (<HTMLInputElement>event.target).value;
+  }
+
+  // combine all forms of databinding
+  createServer(){
+    this.createdServerName = "Server created, name is"+this.serverName;
   }
   ngOnInit() {
   }
