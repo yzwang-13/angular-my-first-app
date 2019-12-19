@@ -1,9 +1,18 @@
-<p>Add a Input field which updates a property ('username') via Two-Way-Binding</p>
-<p>Output the username property via String Interpolation (in a paragraph below the input)</p>
-<p>Add a button which may only be clicked if the username is NOT an empty string</p>
-  <p>Upon clicking the button, the username should be reset to an empty string</p>
+<div class="container">
+  <div class="rwo">
+    <div class="col-sm-12">
 
+
+    </div>
+  </div>
+</div>
+<ol>
+  <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>
+  <li>Outpthe username property via String Interpolation (in a paragraph below the input)</li>
+  <li>Add a button which may only be clicked if the username is NOT an empty string</li>
+  <li>Upon clicking the button, the username should be reset to an empty string</li>
+</ol>
 <p>databinding-assignment works!</p>
-<input type="text" class="form-control" [(ngModel)]="username">
+<input type="text" [(ngModel)]="username">
 <p>{{username}}</p>
-<button class="btn btn-default" [disabled]="username === '' ? true: false" (click)="this.username = '';">Click me</button>
+<button class="btn btn-default" [disabled]="username === '' ? true: false" (click)="this.username = '';" >Click me</button>

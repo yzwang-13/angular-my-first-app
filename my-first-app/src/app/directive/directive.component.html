@@ -1,0 +1,21 @@
+<p>directive works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <input type="text" class="form-control" [(ngModel)]="serverName" >
+      <button class="btn btn-primary" (click)="createServer()">Create Server</button>
+<!--      <p>{{prompt}}</p>-->
+      <!--Create this <p> only when serverName is not empty and insert it into the DOM-->
+      <!--ngIf with else-->
+      <p *ngIf="prompt!=='' && serverName!==''; else noServer">{{prompt}}</p>
+      <ng-template #noServer>
+          <p>No server was created</p>
+      </ng-template>
+
+      <!--ngStyle      -->
+      <p [ngClass]="{online:serverStatus === 'Online'}" [ngStyle]="{'background-color': getColor()}">{{serverStatus}}</p>
+
+      <p *ngFor="let server of servers" [innerText]="server" ></p>
+    </div>
+  </div>
+</div>

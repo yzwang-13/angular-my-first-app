@@ -10,6 +10,9 @@ import { StylingComponent } from './styling/styling.component';
 import { SelectorsAttributesClassComponent } from './selectors-attributes-class/selectors-attributes-class.component';
 import {StringInterpolationComponent} from "./string-interpolation/string-interpolation.component";
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { DatabindingAssignmentComponent } from './databinding-assignment/databinding-assignment.component';
+import { DirectiveComponent } from './directive/directive.component';
+import { DirectiveAssignmentComponent } from './directive-assignment/directive-assignment.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
     StylingComponent,
     SelectorsAttributesClassComponent,
     StringInterpolationComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    DatabindingAssignmentComponent,
+    DirectiveComponent,
+    DirectiveAssignmentComponent
   ],
   imports: [
     BrowserModule,
