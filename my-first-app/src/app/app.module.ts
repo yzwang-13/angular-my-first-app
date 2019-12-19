@@ -6,6 +6,10 @@ import {FormsModule} from "@angular/forms";
 import {ServerComponent} from "./server/server.component";
 import { ServersComponent } from './servers/servers.component';
 import { InlineTemplateComponent } from './inline-template/inline-template.component';
+import { StylingComponent } from './styling/styling.component';
+import { SelectorsAttributesClassComponent } from './selectors-attributes-class/selectors-attributes-class.component';
+import {StringInterpolationComponent} from "./string-interpolation/string-interpolation.component";
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { InlineTemplateComponent } from './inline-template/inline-template.compo
     // if we don't register it
     ServerComponent,
     ServersComponent,
-    InlineTemplateComponent
+    InlineTemplateComponent,
+    StylingComponent,
+    SelectorsAttributesClassComponent,
+    StringInterpolationComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,

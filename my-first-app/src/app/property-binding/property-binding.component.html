@@ -11,3 +11,7 @@
 <!-- binding events to methods-->
 <button class="btn btn-primary" (click)="buttonClick()">Event binding</button>
 
+<!--passing data to event binding-->
+<input type="text" class="form-control" (input)="textEntered($event)">
+<p>server name : {{serverName}}</p>
+
